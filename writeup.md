@@ -19,7 +19,7 @@ The goals / steps of this project are the following:
 [image2]: ./test_images/output_canny_solidWhiteCurve.jpg "Cannyedges"
 [image3]: ./test_images/output_masked_solidWhiteCurve.jpg "Maskededges"
 [image4]: ./test_images/output_lines_solidWhiteCurve.jpg "Drawedlines"
-[image5]: .test_images/output_solidWhiteCurve.jpg "Finaloutput"
+[image5]: ./test_images/output_solidWhiteCurve.jpg "Finaloutput"
 
 ---
 
