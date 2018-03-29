@@ -28,16 +28,19 @@ The goals / steps of this project are the following:
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
 My pipeline consisted of 5 steps. First, convert the images to grayscale, then apply Gaussian smoothing and Canny edges, then define a four sided polygon region,  then apply Hough transform function and draw the lines, and finally, add the lines to the original images.
-
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function by adding four arrays to collect the value of right slope, left slope, right center and left center from each lines, which are not vertical, created by the HoughLinesP functions. Based on the sign of the slope, assign the values to left side and right side. Using the equation (y' - y) = m*(x' - x) to calculate the starting point at y' at the bottom and the ending point at y' around the middle of the images. In the end, draw the right and left lines from the starting points and ending points from both sides.
-
-If you'd like to include images to show how the pipeline works, here is how to include an image:
-
+Here are the images to show the steps:
 ![alt text][image1]
 ![alt text][image2]
 ![alt text][image3]
 ![alt text][image4]
 ![alt text][image5]
+
+Besides, cv2.split() and cv2.merge() are used to generate the images with original color and red lines.
+
+In order to draw a single line on the left and right lanes, I modified the draw_lines() function by adding four arrays to collect the value of right slope, left slope, right center and left center from each lines, which are not vertical, created by the HoughLinesP functions. Based on the sign of the slope, assign the values to left side and right side. Using the equation (y' - y) = m*(x' - x) to calculate the starting point at y' at the bottom and the ending point at y' around the middle of the images. In the end, draw the right and left lines from the starting points and ending points from both sides.
+
+
+
 
 
 ### 2. Identify potential shortcomings with your current pipeline
